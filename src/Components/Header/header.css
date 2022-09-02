@@ -1,0 +1,38 @@
+.show {
+  display: block !important;
+  animation: menuIn 200ms ease-in-out;
+}
+.hide {
+  display: none !important;
+}
+
+.mobile-sticky {
+  box-shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #0a192f;
+  padding: 0px 15px;
+  width: calc(100% - 30px) !important;
+  transition: all;
+  animation: stickyHeader 400ms ease-in-out 0ms alternate;
+}
+
+@keyframes menuIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stickyHeader {
+  0% {
+    height: 0px;
+  }
+  100% {
+    opacity: 70px;
+  }
+}
